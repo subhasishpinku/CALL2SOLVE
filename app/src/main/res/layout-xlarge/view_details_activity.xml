@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:src="@mipmap/logo"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/yellow_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Product Details"/>
+                </LinearLayout>
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    >
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Product Name      :" />
+                        <TextView
+                            android:id="@+id/Pname"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Hitachi Air Conditioner (Model No) " />
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Company Name   :" />
+                        <TextView
+                            android:id="@+id/companynameId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="Minor Service &amp; Maintenance" />
+
+                    </TableRow>
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Model No              :" />
+                        <TextView
+                            android:id="@+id/modelNoId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="ABCDEF123452GHHHHHH" />
+                    </LinearLayout>
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/yellow_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Service Details"/>
+                </LinearLayout>
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    >
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Selected Service  :" />
+                        <TextView
+                            android:id="@+id/servicenameId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="View Service" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Issue Details         :" />
+                        <TextView
+                            android:id="@+id/issuedId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="Product Issued" />
+
+                    </TableRow>
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Service Address   :" />
+                        <TextView
+                            android:id="@+id/serviceAddId"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. (Full Address)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Landmark              :" />
+                        <TextView
+                            android:id="@+id/landmarkId"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:text="Paikpara" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Date and Time      :"/>
+                        <TextView
+                            android:id="@+id/preFerDateID"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:text="Between 23/02/2019 to 25/02/2019" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Preferred time for servicing " />
+                        <TextView
+                            android:id="@+id/preFerTimeID"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:layout_weight="1"
+                            android:text="01:30pm to 02:30pm" />
+                    </LinearLayout>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:id="@+id/llvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/yellow_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Customer Details"/>
+                </LinearLayout>
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    >
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Customer Name  :" />
+                        <TextView
+                            android:id="@+id/CustNameID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="View Name" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Contact No           :" />
+                        <TextView
+                            android:id="@+id/CusPhoneID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="9163752468" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Alternative No     :" />
+                        <TextView
+                            android:id="@+id/alerNoId"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:text="Between 23/02/2019 to 25/02/2019" />
+                    </TableRow>
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Address                :" />
+                        <TextView
+                            android:id="@+id/CusAddressID"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. (Full Address)" />
+
+
+                    </LinearLayout>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/lllvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:background="@drawable/yellow_shape"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Technician Details"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_below="@+id/lllvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginTop="5sp"
+                                android:id="@+id/imgID"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:src="@drawable/potrait"
+                                />
+
+                            <TextView
+                                android:id="@+id/tmaneId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/imgID"
+                                android:text="Technician Name  :"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10sp"
+                                android:textColor="@color/black" />
+                            <RatingBar
+                                android:layout_marginLeft="10sp"
+                                android:layout_toRightOf="@+id/imgID"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_below="@+id/tmaneId"
+                                android:id="@+id/ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:stepSize="1.0"
+                                android:rating="5" />
+                            <TextView
+                                android:id="@+id/ratvalue"
+                                android:layout_marginLeft="10sp"
+                                android:layout_below="@+id/ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/imgID"
+                                android:textColor="@color/red"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:text="1.5"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/PcardId"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:id="@+id/lvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/yellow_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Payment Details"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvserviceId"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="150sp"
+                        android:layout_marginLeft="10sp"
+                        android:text="Payment mode  :"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageId"-->
+                    <!--android:layout_marginTop="10sp"-->
+                    <!--android:layout_toRightOf="@+id/tvserviceId"-->
+                    <!--android:layout_marginLeft="5sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:layout_width="15sp"-->
+                    <!--android:layout_height="15sp"-->
+                    <!--android:src="@drawable/rupees"-->
+                    <!--/>-->
+                    <TextView
+                        android:id="@+id/paymentmodeID"
+                        android:layout_marginTop="10sp"
+                        android:layout_toRightOf="@+id/tvserviceId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Banking"/>
+                    <TextView
+                        android:layout_below="@+id/tvserviceId"
+                        android:id="@+id/maintananceId"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="150sp"
+                        android:text="Payment             :"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/imageeId"
+                        android:layout_below="@+id/tvserviceId"
+                        android:layout_toRightOf="@+id/maintananceId"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginLeft="5sp"
+                        android:textColor="@color/black"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:src="@drawable/rupees"
+                        />
+                    <TextView
+                        android:id="@+id/amountID"
+                        android:layout_toRightOf="@+id/imageeId"
+                        android:layout_below="@+id/tvserviceId"
+                        android:layout_marginTop="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="499"/>
+                    <View
+                        android:id="@+id/viewId"
+                        android:layout_below="@+id/maintananceId"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:id="@+id/totalId"
+                        android:layout_below="@+id/viewId"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="150sp"
+                        android:text="Total Charge      :"
+                        android:layout_marginBottom="10sp"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/inmgTotalId"
+                        android:layout_below="@+id/viewId"
+                        android:layout_toRightOf="@+id/totalId"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:src="@drawable/rupees_red"
+                        />
+                    <TextView
+                        android:id="@+id/totalchargeID"
+                        android:layout_below="@+id/viewId"
+                        android:layout_toRightOf="@+id/inmgTotalId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="15sp"
+                        android:text="499"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CancardId"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:id="@+id/lvcancelId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/yellow_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Cancel Details"/>
+                </LinearLayout>
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Cancel Date  :" />
+                        <TextView
+                            android:id="@+id/cdateId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="View Name" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Cancel Time          :" />
+                        <TextView
+                            android:id="@+id/ctimeId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="10sp"
+                            android:text="9163752468" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/white"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Cancel Reason     :" />
+                        <TextView
+                            android:id="@+id/cresonId"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:justificationMode="inter_word"
+                            android:text="Between 23/02/2019 to 25/02/2019" />
+                    </TableRow>
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/lvvv"
+                        android:textColor="#ffffff"
+                        android:text="call Summaryy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:background="@drawable/rating_shape"
+                        android:layout_weight="3" />
+
+                    <Button
+                        android:text="Invoice"
+                        android:textColor="#ffffff"
+                        android:id="@+id/invoiceId"
+                        android:background="@drawable/rating_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="3"/>
+                    <Button
+                        android:text="Tracking"
+                        android:textColor="#ffffff"
+                        android:id="@+id/trackingID"
+                        android:background="@drawable/rating_shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:layout_weight="3"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <com.baoyachi.stepview.VerticalStepView
+                    android:id="@+id/Verticalstepview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </com.baoyachi.stepview.VerticalStepView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llv"
+                android:visibility="gone"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60sp"
+                    android:layout_marginTop="12dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

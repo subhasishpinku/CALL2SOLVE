@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#00574B</color>
+    <color name="white">#ffffff</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="textColorPrimary">#0e577e</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow_middle">#FCF3CF</color>
+    <color name="yellow_end">#7ae7de83</color>
+<!--    payuBiz-->
+    <color name="darkPrimaryColor">#D32F2F</color>
+    <color name="primaryColor">#F44336</color>
+    <color name="lightPrimaryColor">#FFCDD2</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="accentColor">#FF5722</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#727272</color>
+    <color name="dividerColor">#B6B6B6</color>
+
+</resources>

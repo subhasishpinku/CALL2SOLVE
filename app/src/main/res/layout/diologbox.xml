@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:src="@mipmap/logo" />
+    </androidx.appcompat.widget.Toolbar>
+    <!--<TextView-->
+    <!--android:id="@+id/tv"-->
+    <!--android:layout_marginTop="60sp"-->
+    <!--android:layout_below="@+id/toolbar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="My Custom Dialog"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <EditText
+        android:id="@+id/etsearch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:hint="@string/entetpin"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" >
+        <requestFocus />
+    </EditText>
+    <LinearLayout
+        android:layout_below="@+id/etsearch"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:text="SUBMIT" />
+        <TextView
+            android:id="@+id/nofounId"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:text=""/>
+    </LinearLayout>
+
+</RelativeLayout>

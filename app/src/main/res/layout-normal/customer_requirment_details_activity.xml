@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:src="@mipmap/logo"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#DDD9D9"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:id="@+id/lv"
+                    android:background="#DDD9D9"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Customer Requirment Details"/>
+                    <View
+                        android:layout_below="@+id/rateserviceID"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="10sp"
+                        android:id="@+id/myview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark"/>
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Product Name"/>
+                    <RelativeLayout
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/layout_square_border"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/productspID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="30sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_bg" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Service Name"/>
+                    <RelativeLayout
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/layout_square_border"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/serviceSpID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="30sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_bg" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Type of Service"/>
+                    <RelativeLayout
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/layout_square_border"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/TypeserviceSpID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="30sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_bg" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/visitId"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:drawableLeft="@drawable/starcolorred"
+                        android:text="Visiting Charge"/>
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Manufacture Company"/>
+                    <EditText
+                        android:id="@+id/cumpanyId"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@drawable/layout_square_border"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:hint="Manufacture Company" />
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Model No"/>
+                    <EditText
+                        android:id="@+id/mobileId"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@drawable/layout_square_border"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:hint="Model No" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/lvv"
+                android:visibility="gone"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Repairing Date"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Repairing Date"/>
+            <RelativeLayout
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/layout_square_border"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/currentdateID"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="30sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/spinner_bg" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:background="#DDD9D9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Repairing Time"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/timeID"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:background="@drawable/layout_square_border"
+                        android:gravity="center"
+                        android:hint="Repairing Time" />
+                    <ImageView
+                        android:id="@+id/timeclockID"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:src="@drawable/ic_watch_later_black_24dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginBottom="20sp"
+                        android:background="@drawable/layout_square_border"
+                        android:orientation="horizontal">
+                        <Spinner
+                            android:id="@+id/getdateId"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="30sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_bg" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Product Problem"/>
+                <EditText
+                    android:id="@+id/addressID"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/layout_square_border"
+                    android:gravity="top|center"
+                    android:hint="Enter Product Problem"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical" />
+                <Button
+                    android:id="@+id/conbookingId"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:text="CONTINUE BOOKING"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/square_shado_shape"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

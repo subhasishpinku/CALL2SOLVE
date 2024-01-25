@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CALL2 <br>SOLV</br> </string>
+    <string name="app_dasboard">HOME</string>
+    <string name="drawer_Name">Name</string>
+    <string name="drawer_Desig">Oficer</string>
+    <string name="drawer_email">a@gmail.com</string>
+    <string name="drawer_profile">Profile</string>
+    <string name="drawer_logout">Sign Out</string>
+    <string name="drawer_sales">HOME</string>
+    <string name="drawer_purchase"></string>
+    <string name="drawer_accounts">Accounts</string>
+    <string name="drawer_hr">HR</string>
+    <string name="drawer_group_chart">Group Chart</string>
+    <string name="drawer_instructions">Instruction</string>
+    <string name="drawer_work_schedule">Work Schedule</string>
+    <string name="drawer_rate_this_app">Rate This App</string>
+    <string name="drawer_share_with_friend">Share With Friend</string>
+    <string name="drawer_feedback">Feedback</string>
+    <!--<string name="username" tools:ignore="ExtraTranslation">Username</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Reload</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="place_order">Place Order</string>
+    <string name="welcome">Welcome</string>
+    <string name="about_us">About Us</string>
+    <string name="servies">Services</string>
+    <string name="ratecard">Rate Card</string>
+    <string name="media">Media</string>
+    <string name="tercondition">Terms &amp; Condition</string>
+    <string name="servicepolocy">Service Policy</string>
+    <string name="contractus">Contact us</string>
+    <string name="booknow">Book Now</string>
+    <string name="booknowtech">BOOK YOUR TECHNICIAN NOW</string>
+    <string name="termsconditions">Terms &amp; Conditions</string>
+    <string name="entetpin">Enter Pincode</string>
+    <string name="pickup">Pick Any One District</string>
+    <string name="service">Service Charge Of All Products</string>
+    <string name="servicecharge">Service Change of Window Air Conditioner</string>
+    <string name="normalservice">Normal Service Charges</string>
+    <string name="breakdowen">Breakdowen Charge</string>
+    <string name="insatallchage">Installation Charge</string>
+    <string name="conditioner">Service Charge of split Air Conditioner</string>
+    <string name="terms_and_privacy">Know about our all<a href="terms:">Terms &amp; condition</a> &amp; <a href="privacy:">Privacy Policy</a>  to book our technician for service</string>
+    <string name="btn_link_to_register">Not a member? Register Now.</string>
+    <string name="forgetpass">Forgot Password?</string>
+    <string name="myprofile">My Profile</string>
+    <string name="myorder">My Order</string>
+    <string name="reatus">Rate Us</string>
+    <string name="logout">Logout</string>
+
+    <!--    PayuBiz-->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_next">Next</string>
+    <string name="action_demo">Demo</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_net_banking">NetBankingActivity</string>
+    <string name="title_activity_cash_card">CashCardActivity</string>
+    <string name="title_activity_emi">EmiActivity</string>
+    <string name="title_activity_card">CardActivity</string>
+    <string name="title_activity_user_cards">UserCardsActivity</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
+    <string name="pay_now">Pay</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="click_here">Click here</string>
+    <string name="if_cvv_and_expiry_on_card"> &#160;if you have CVV and Expiry on your card</string>
+    <string name="if_dont_cvv_and_expiry_on_card"> &#160;if you don\'t have CVV and Expiry on your card</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="title_activity_merchant_payment">MerchantPaymentActivity</string>
+    <string name="title_activity_verify_api">VerifyApiActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="test">Test</string>
+    <string name="production">Production</string>
+
+    <string-array name="environment_array">
+        <item>@string/test</item>
+        <item>@string/production</item>
+    </string-array>
+
+    <string name="use_live_key_in_production_environment">Please use your live merchant key in production environment</string>
+    <string name="could_not_receive_data">Could not receive data</string>
+
+</resources>
